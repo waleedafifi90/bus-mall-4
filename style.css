@@ -1,0 +1,27 @@
+*{box-sizing: border-box;}
+body{
+    width: 90%;
+    margin: auto;
+}
+
+img {
+    width: 250px;
+}
+h1 {
+    color: rgb(15, 88, 64);
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(15, 88, 64);
+}
+button {
+    font-size: larger;
+    background-color:rgb(15, 88, 64) ;
+    color: azure;
+}
+button:hover{
+    background-color: azure;
+    color:rgb(15, 88, 64) ;
+}
