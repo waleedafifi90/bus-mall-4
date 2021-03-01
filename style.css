@@ -3,9 +3,13 @@ body{
     width: 90%;
     margin: auto;
 }
-
+#logo{
+    width: 100px;
+    height: 100px;
+}
 img {
     width: 250px;
+    height: 350px;
 }
 h1 {
     color: rgb(15, 88, 64);
