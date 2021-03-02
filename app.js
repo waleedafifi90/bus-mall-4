@@ -16,7 +16,7 @@ let leftimgIndex = 0;
 let rightimgIndex = 0;
 let centerimgIndex = 0;
 const clickCounter = 24;
-let previous = [, ,];
+let previous = [];
 
 let imgArray = [
     'bag.jpg',
@@ -75,9 +75,8 @@ function render() {
         } while (leftimgIndex === rightimgIndex || centerimgIndex === rightimgIndex);
 
 
-
-
     } while (previous.includes(leftimgIndex) || previous.includes(centerimgIndex) || previous.includes(rightimgIndex));
+
     console.log(leftimgIndex, centerimgIndex, rightimgIndex);
 
     leftImage.src = busMall.all[leftimgIndex].path;
@@ -103,15 +102,22 @@ function handelClick(event) {
         if (clickedElement.id == 'leftImage' || clickedElement.id == 'rightImage' || clickedElement.id == 'centertImage') {
             if (clickedElement.id == 'leftImage') {
                 busMall.all[leftimgIndex].click++;
+                console.log(busMall.all[leftimgIndex]);
             }
 
-            if (clickedElement.id == 'centerImage') {
+            if (clickedElement.id == 'centertImage') {
                 busMall.all[centerimgIndex].click++;
+                console.log(busMall.all[centerimgIndex]);
+
             }
 
             if (clickedElement.id == 'rightImage') {
                 busMall.all[rightimgIndex].click++;
+                console.log(busMall.all[rightimgIndex]);
+
             }
+
+
             busMall.counter++;
             render();
         }
